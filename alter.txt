@@ -1,0 +1,41 @@
+//users
+
+SET @autoid:=0;
+UPDATE users SET sno=@autoid:=(@autoid+1);
+ALTER TABLE users AUTO_INCREMENT=1;
+
+
+//comments
+
+SET @autoid:=0;
+UPDATE comments SET comment_id=@autoid:=(@autoid+1);
+ALTER TABLE comments AUTO_INCREMENT=1;
+
+
+//contact
+
+SET @autoid:=0;
+UPDATE contact SET sno=@autoid:=(@autoid+1);
+ALTER TABLE contact AUTO_INCREMENT=1;
+
+//threads
+
+SET @autoid:=0;
+UPDATE threads SET thread_id=@autoid:=(@autoid+1);
+ALTER TABLE threads AUTO_INCREMENT=1;
+
+
+//categories
+
+SET @autoid:=0;
+UPDATE categories SET category_id=@autoid:=(@autoid+1);
+ALTER TABLE categories AUTO_INCREMENT=1;
+
+
+
+
+
+ALTER TABLE users AUTO_INCREMENT=1;
+
+
+ 
